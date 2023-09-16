@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Car-Auto</h1>
+      <a href=""><i id="link" class="bi bi-list"></i></a>
+      <nav>
+        <a class="sign" href="">Kayıt Ol</a>
+        <a href="">Giriş Yap</a>
+        <a class="counter" href="">Sepet: <span id="cartCount">0</span></a>
+      </nav>
+    </header>
+    <!-- header alanı bitiş -->
+
+    <main>
+      <!-- slider bölümü -->
+      <section>
+        <div class="cart-area">
+          <div class="cart">
+            <div class="images">
+              <img class="image-top" src="" alt="" />
+            </div>
+            <div class="icon">
+              <i class="bi bi-arrow-left-circle-fill"></i>
+
+              <i class="bi bi-arrow-right-circle-fill"></i>
+            </div>
+            <div class="info">
+              <h3 class="cart-title">mercedes</h3>
+              <p class="model">
+                2023 Amg <span class="count">Fiyat: 10000000</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- araba sepet bölümü -->
+      <section>
+        <div class="sepet">
+          <div class="sepet-card">
+            <img src="images/car-49278_640.jpg" alt="" />
+            <p>Model: 2023</p>
+            <button class="add-card">Sepete ekle</button>
+          </div>
+
+          <div class="sepet-card">
+            <img src="images/car-5749737_640.png" alt="" />
+            <p>Model: 2023</p>
+            <button class="add-card">Sepete ekle</button>
+          </div>
+
+          <div class="sepet-card">
+            <img src="images/car-967470_640.png" alt="" />
+            <p>Model: 2023</p>
+            <button class="add-card">Sepete ekle</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="form">
+        <div id="closeButton" class="close">
+          <span>X</span>
+        </div>
+        <div class="form-area">
+          <form id="form" action="">
+            <label for="email">Kullanıcı Adi</label>
+            <input type="email" id="email" placeholder="email giriniz.." />
+
+            <label for="surname">Kullanıcı S.adi</label>
+            <input type="text" id="surname" placeholder="surname giriniz.." />
+
+            <button type="submit">Gönder</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- form validation bölümü -->
+    <footer>
+      <div>
+        <h1>Arabalar</h1>
+        <a href="">Bmw</a>
+        <a href="">Audi</a>
+        <a href="">Mercedes</a>
+        <a href="">Opel</a>
+      </div>
+      <div>
+        <h1>iletişim</h1>
+        <a href="">Alpaycal125@gmail.com</a>
+        <a href="">05304444444</a>
+        <a href="">eskici kitap evi</a>
+        <a href="">dünya evi</a>
+      </div>
+
+      <div>
+        <h1>Üyelerimiz</h1>
+        <a href="">108637 üye</a>
+        <a href="">12.000 içerik</a>
+        <a href="">eskici kitap evi</a>
+        <a href="">1000 eiğim seti</a>
+      </div>
+      <div class="bottom">
+        <p>CopyRight Tüm Hakları Bana Aittir 2023</p>
+      </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

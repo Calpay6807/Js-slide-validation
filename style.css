@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: 0; */
+  text-decoration: none;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: black;
+}
+header a i {
+  display: none;
+  font-size: 35px;
+  color: gray;
+}
+
+header nav .counter {
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 3px;
+}
+
+/* slider bölümü */
+
+section .cart-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+section .cart-area .cart img {
+  height: 400px;
+  width: 700px;
+}
+
+section .cart-area .cart i {
+  font-size: 50px;
+  cursor: pointer;
+  color: black;
+}
+
+section .cart-area .cart .icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .cart-area .cart .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section .cart-area .cart .info h3 {
+  font-size: 35px;
+
+  border: 1px solid gray;
+  background-color: brown;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+section .cart-area .cart .info p {
+  border: 1px solid gray;
+  background-color: brown;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+/* slider bitiş */
+
+/* sepet araba */
+
+section .sepet {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 100px;
+  position: relative;
+}
+section .sepet .sepet-card {
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 400px;
+}
+
+section .sepet .sepet-card p {
+  margin-bottom: 10px;
+}
+section .sepet .sepet-card button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: brown;
+  color: white;
+  margin-bottom: 10px;
+}
+section .sepet .sepet-card img {
+  width: 350px;
+  height: 300px;
+}
+
+/* eklenen sepet divi */
+
+.form {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 400px;
+  background-color: rgba(67, 65, 65, 0.876);
+  border-radius: 5px;
+}
+.form .form-area {
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form .form-area form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 5px;
+}
+.form .form-area form input {
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.form .form-area form label {
+  color: rgb(201, 199, 199);
+}
+.form .form-area button {
+  margin-top: 10px;
+  background-color: brown;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.form .close span {
+  font-size: 25px;
+  cursor: pointer;
+}
+.custom-div {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.752);
+  position: absolute;
+  top: 70px;
+}
+/* form validation */
+.error {
+  border: 1px solid red;
+}
+.success {
+  border: 1px solid green;
+}
+
+/* footer alanı kodlama */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+footer div a {
+  color: gray;
+}
+
+footer .bottom {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  background-color: rgba(128, 128, 128, 0.194);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  section .cart-area .cart img {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 550px) {
+  section .cart-area .cart img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  header a i {
+    display: block;
+  }
+
+  .toggle {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    position: absolute;
+    top: 80px;
+    gap: 10px;
+    right: 0;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
